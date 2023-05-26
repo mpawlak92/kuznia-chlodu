@@ -35,6 +35,7 @@ Providing the following functionalities:
 - styled components
 - scss
 - redux toolkit
+- react router
 - github (branching strategy: z uwagi na projekt jednoosobowy zastosowałem uproszczone podejście trunk based development)
 - axeDevTool (narzędzie do oceny accesibility)
  
