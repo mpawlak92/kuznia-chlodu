@@ -19,6 +19,7 @@ Providing the following functionalities:
 🟦 Menu 
 - Menu bar 
 - menu on landingpage
+
 🟦 Menu 
   - locking like on https://www.apple.com/
   
