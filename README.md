@@ -20,7 +20,7 @@ Providing the following functionalities:
 - Menu bar 
 - menu on landingpage
 
-🟦 Menu 
+🟦 Submenu
   - locking like on https://www.apple.com/
   
 🟦 LandingPage
