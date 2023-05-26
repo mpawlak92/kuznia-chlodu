@@ -45,7 +45,7 @@ General functionalities:
 
 To launch the project locally, is required a globally installed Node.js version 18 or higher.
 
-## Instalacja paczek
+## Packages instalation
 
 Aby zainstalować paczki należy otworzyć projekt w wybranym IDE polecany Visual Studio Code oraz zainstalować paczki przy pomocy polecenia "npm instal"
 To install packages , you need to open project in your IDE, recomended Visual Studio Code, and use command:
