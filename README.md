@@ -9,28 +9,27 @@ It is SPA for air conditioning company. It presents all nedded informaton about 
 
 Providing the following functionalities:
 
-General functionalities:
+🟦 General functionalities:
 
 - Providing the accessibility,(RWD, posiblity to handeling website from keybord)
 - Providing responsibility
 - Possibility to change language
 - Possibility to change view mode (dark/light)
 
-▫️ Menu 
+🟦 Menu 
 - Menu bar 
 - menu on landingpage
 
-▫️ LandingPage
+🟦 LandingPage
   
-▫️ Services subpage
+🟦 Services subpage
   - car
   - home
   - cleaning
 
-▫️ NotFound (404)
+🟦 NotFound (404)
 
-▫️ Technologies:
-
+🟦 Technologies:
 - react
 - typescript
 - styled components
@@ -38,9 +37,8 @@ General functionalities:
 - redux toolkit
 - github (branching strategy: z uwagi na projekt jednoosobowy zastosowałem uproszczone podejście trunk based development)
 - axeDevTool (narzędzie do oceny accesibility)
-
-
-
+ 
+ 
 ## Application instalation
 
 To launch the project locally, is required a globally installed Node.js version 18 or higher.
