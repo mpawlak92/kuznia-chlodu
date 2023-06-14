@@ -10,14 +10,15 @@ export const light: DefaultTheme = {
       blue: 'blue',
       primary: '#bfdef3',
       secondary: '#75b3da',
-      darkText: '#0d1117',
+      darkText: '#5a6777',
     },
     primary: {
       main: '#fff',
-      contrastText: '#5a6777',
+      contrastText: '#000',
     },
     secondary: {
       main: '#fff',
+      mainSemiTransparent: 'rgba(255,255,255,0.8)',
       contrastText: '#5a6777',
     },
   },
@@ -42,6 +43,7 @@ export const dark: DefaultTheme = {
     },
     secondary: {
       main: '#23272d',
+      mainSemiTransparent: 'rgba(35, 39, 45,0.8)',
       contrastText: '#f0f6fc',
     },
   },
