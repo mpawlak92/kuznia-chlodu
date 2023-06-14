@@ -131,7 +131,7 @@ const Logo = styled.div<{ isScrolled: boolean }>`
     align-items: center;
     text-decoration: none;
     text-transform: uppercase;
-    color: ${(props) => props.theme.palette.secondary.contrastText};
+    color: ${(props) => props.theme.palette.primary.contrastText};
 
     &:hover {
       cursor: pointer;
@@ -143,25 +143,22 @@ const Logo = styled.div<{ isScrolled: boolean }>`
   }
 `;
 
-const ThemeButton = styled.div`
+const ThemeButton = styled.button`
   width: 40px;
   aspect-ratio: 1/1;
   padding: 10px;
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
+  border: 1px solid ${(props) => props.theme.palette.secondary.contrastText};
   border-radius: 8px;
   background-color: ${(props) => props.theme.palette.common.primary};
   cursor: pointer;
 `;
-const ThemeSunBtn = styled(ThemeButton)<{
-  sunImg: string;
-}>`
+const ThemeSunBtn = styled(ThemeButton)<{ sunImg: string }>`
   background-image: url(${(props) => props.sunImg});
 `;
-const ThemeMoonBtn = styled(ThemeButton)<{
-  moonImg: string;
-}>`
+const ThemeMoonBtn = styled(ThemeButton)<{ moonImg: string }>`
   background-image: url(${(props) => props.moonImg});
 `;
 const LinksContainer = styled.nav`
@@ -180,8 +177,7 @@ const LinksContainer = styled.nav`
     text-transform: uppercase;
     color: ${(props) => props.theme.palette.secondary.contrastText};
     &:hover {
-      border-bottom: 4px solid
-        ${(props) => props.theme.palette.common.secondary};
+      border-bottom: 4px solid ${(props) => props.theme.palette.common.darkText};
       cursor: pointer;
     }
     &:last-child {

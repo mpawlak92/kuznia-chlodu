@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import gradient from '../../assets/gradient.png';
 import stick from '../../assets/air_conditioner.png';
 import stick2 from '../../assets/air_conditioner2.png';
@@ -22,7 +21,6 @@ export default LandingPage;
 const LandingPageContainer = styled.div`
   position: relative;
   display: flex;
-  /* max-width: 100vw; */
   height: 100vh;
   color: ${(props) => props.theme.palette.primary.contrastText};
   background-color: ${(props) => props.theme.palette.primary.main};
@@ -42,6 +40,7 @@ const LandingPage_text = styled.div`
     font-size: 5rem;
     text-transform: uppercase;
     text-align: right;
+    color: ${(props) => props.theme.palette.secondary.contrastText};
   }
   button {
     width: 20rem;
