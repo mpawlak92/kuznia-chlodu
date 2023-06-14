@@ -69,6 +69,7 @@ const Menu = () => {
             to='services'
             duration={700}
             smooth={true}
+            offset={-80}
             className='link'>
             Usługi
           </Link>
@@ -84,6 +85,7 @@ const Menu = () => {
             duration={700}
             to='about'
             smooth={true}
+            offset={-80}
             className='link'>
             O nas
           </Link>
