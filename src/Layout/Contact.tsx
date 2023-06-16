@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <>
       <Menu />
-      <Section bgcolor='white' id='contact'>
+      <Section wrapper={true} bgcolor='white' id='contact'>
         <p>contact</p>
       </Section>
     </>

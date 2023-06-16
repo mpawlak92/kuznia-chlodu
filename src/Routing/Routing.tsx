@@ -6,19 +6,19 @@ import Contact from '../Layout/Contact';
 const Routing = () => {
   return (
     <>
-      <Routes> 
+      <Routes>
         <Route path='/' element={<ScrolledPage />} />
         <Route
           path='/klimatyzacja-domowa'
-          element={<Section bgcolor='royalblue' id='uslugi' />}
+          element={<Section wrapper={true} bgcolor='royalblue' id='uslugi' />}
         />
         <Route
           path='/klimatyzacja-mobilna'
-          element={<Section bgcolor='royalblue' id='uslugi' />}
+          element={<Section wrapper={true} bgcolor='royalblue' id='uslugi' />}
         />
         <Route
           path='/czyszczenie-klimatyzacji'
-          element={<Section bgcolor='royalblue' id='uslugi' />}
+          element={<Section wrapper={true} bgcolor='royalblue' id='uslugi' />}
         />
         <Route path='/kontakt' element={<Contact />} />
       </Routes>
