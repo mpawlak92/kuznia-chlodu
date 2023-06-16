@@ -38,8 +38,7 @@ const Services = () => {
             <Link className='link' to='/mobilna'>
               <h2>Samochodowa - mobilna</h2>
               <p>
-                Dobierzemy, przywieziemy, zamontujemy i będziemy dbać o kondycję
-                Twojej klimatyzacji.
+                Mobilny serwis klimatyzacji samochodowej bezpośrednio u klienta.
               </p>
               <p className='fake-link'>
                 Kliknij w kartę, aby dowiedzieć się wiecej.
@@ -56,8 +55,7 @@ const Services = () => {
             <Link className='link' to='/serwis'>
               <h2>Serwis</h2>
               <p>
-                Dobierzemy, przywieziemy, zamontujemy i będziemy dbać o kondycję
-                Twojej klimatyzacji.
+                Czyszczenie i serwis klimatyzacji stacjonarnej i samochodowej.
               </p>
               <p className='fake-link'>
                 Kliknij w kartę, aby dowiedzieć się wiecej.
