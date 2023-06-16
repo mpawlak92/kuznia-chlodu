@@ -2,6 +2,7 @@ import 'styled-components';
 interface IPalette {
   main: string;
   mainSemiTransparent?: string;
+  blackHalfTransparent?: string;
   contrastText: string;
 }
 declare module 'styled-components' {

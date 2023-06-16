@@ -85,7 +85,7 @@ const Menu = () => {
             duration={700}
             to='about'
             smooth={true}
-            offset={0}
+            offset={1}
             className='link'>
             O nas
           </Link>
