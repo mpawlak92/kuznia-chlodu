@@ -25,6 +25,7 @@ const App = () => {
       <ThemeContext.Provider value={{ theme: theme, changeTheme: changeTheme }}>
         <ThemeProvider theme={theme === 'light' ? light : dark}>
           <GlobalStyle />
+          <div>XD</div>
           <Routing />
         </ThemeProvider>
       </ThemeContext.Provider>
