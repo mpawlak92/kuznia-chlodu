@@ -2,83 +2,93 @@ import styled from 'styled-components';
 import homeImg from '../assets/service_home.jpg';
 import mobileImg from '../assets/service_mobile.jpg';
 import serviceImg from '../assets/service_service.jpg';
+import saleImg from '../assets/saleImg.png';
 import { Link } from 'react-router-dom';
+import { device } from '../style/Brakepoints';
 
 const Services = () => {
   return (
-    <SecrionContainer>
-      <SectionHeading>Nasze usługi</SectionHeading>
+    <>
+      <CardContainer>
+        <SectionHeading>Nasze usługi</SectionHeading>
 
-      <ServiceCard>
-        <ServiceCard_cover img={homeImg}>
-          <ServiceCard_textBelt>Do domu i biura</ServiceCard_textBelt>
-        </ServiceCard_cover>
-        <ServiceCard_secondSide>
-          <Link className='link' to='/domowa'>
-            <h2>Do domu i biura</h2>
-            <p>
-              Dobierzemy, przywieziemy, zamontujemy i będziemy dbać o kondycję
-              Twojej klimatyzacji.
-            </p>
-            <p className='fake-link'>
-              Kliknij w kartę, aby dowiedzieć się wiecej.
-            </p>
-          </Link>
-        </ServiceCard_secondSide>
-      </ServiceCard>
+        <ServiceCard>
+          <ServiceCard_cover img={homeImg}>
+            <ServiceCard_textBelt>Do domu i biura</ServiceCard_textBelt>
+          </ServiceCard_cover>
+          <ServiceCard_secondSide>
+            <Link className='link' to='/domowa'>
+              <h2>Do domu i biura</h2>
+              <p>
+                Dobierzemy, przywieziemy, zamontujemy i będziemy dbać o kondycję
+                Twojej klimatyzacji.
+              </p>
+              <p className='fake-link'>
+                Kliknij w kartę, aby dowiedzieć się wiecej.
+              </p>
+            </Link>
+          </ServiceCard_secondSide>
+        </ServiceCard>
 
-      <ServiceCard>
-        <ServiceCard_cover img={mobileImg}>
-          <ServiceCard_textBelt>Samochodowa - mobilna</ServiceCard_textBelt>
-        </ServiceCard_cover>
-        <ServiceCard_secondSide>
-          <Link className='link' to='/mobilna'>
-            <h2>Samochodowa - mobilna</h2>
-            <p>
-              Dobierzemy, przywieziemy, zamontujemy i będziemy dbać o kondycję
-              Twojej klimatyzacji.
-            </p>
-            <p className='fake-link'>
-              Kliknij w kartę, aby dowiedzieć się wiecej.
-            </p>
-          </Link>
-        </ServiceCard_secondSide>
-      </ServiceCard>
+        <ServiceCard>
+          <ServiceCard_cover img={mobileImg}>
+            <ServiceCard_textBelt>Samochodowa - mobilna</ServiceCard_textBelt>
+          </ServiceCard_cover>
+          <ServiceCard_secondSide>
+            <Link className='link' to='/mobilna'>
+              <h2>Samochodowa - mobilna</h2>
+              <p>
+                Dobierzemy, przywieziemy, zamontujemy i będziemy dbać o kondycję
+                Twojej klimatyzacji.
+              </p>
+              <p className='fake-link'>
+                Kliknij w kartę, aby dowiedzieć się wiecej.
+              </p>
+            </Link>
+          </ServiceCard_secondSide>
+        </ServiceCard>
 
-      <ServiceCard>
-        <ServiceCard_cover img={serviceImg}>
-          <ServiceCard_textBelt>Serwis</ServiceCard_textBelt>
-        </ServiceCard_cover>
-        <ServiceCard_secondSide>
-          <Link className='link' to='/serwis'>
-            <h2>Serwis</h2>
-            <p>
-              Dobierzemy, przywieziemy, zamontujemy i będziemy dbać o kondycję
-              Twojej klimatyzacji.
-            </p>
-            <p className='fake-link'>
-              Kliknij w kartę, aby dowiedzieć się wiecej.
-            </p>
-          </Link>
-        </ServiceCard_secondSide>
-      </ServiceCard>
-    </SecrionContainer>
+        <ServiceCard>
+          <ServiceCard_cover img={serviceImg}>
+            <ServiceCard_textBelt>Serwis</ServiceCard_textBelt>
+          </ServiceCard_cover>
+          <ServiceCard_secondSide>
+            <Link className='link' to='/serwis'>
+              <h2>Serwis</h2>
+              <p>
+                Dobierzemy, przywieziemy, zamontujemy i będziemy dbać o kondycję
+                Twojej klimatyzacji.
+              </p>
+              <p className='fake-link'>
+                Kliknij w kartę, aby dowiedzieć się wiecej.
+              </p>
+            </Link>
+          </ServiceCard_secondSide>
+        </ServiceCard>
+      </CardContainer>
+      <AdvertContainer>
+        <h3>Stali klienci mogą liczyć na atrakcyjne rabaty!</h3>
+        <AdvertContainer_img src={saleImg}></AdvertContainer_img>
+        <img src='' alt='' />
+      </AdvertContainer>
+    </>
   );
 };
 
 export default Services;
 
-const SecrionContainer = styled.div`
+const CardContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  width: 100%;
-  font-size: 4rem;
+  width: 90%;
+  max-width: 1600px;
+  font-size: 5rem;
   color: ${(props) => props.theme.palette.primary.contrastText};
 `;
 const SectionHeading = styled.h2`
   width: 100%;
-  margin: 1rem 0;
+  margin: 4rem 0;
   font-size: 1em;
   text-align: center;
   color: ${(props) => props.theme.palette.secondary.contrastText};
@@ -180,5 +190,35 @@ const ServiceCard = styled.button`
   &:hover ${ServiceCard_secondSide} {
     transform: rotateY(0deg);
     opacity: 1;
+  }
+`;
+const AdvertContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 250px;
+  margin: 5rem 0;
+  margin-bottom: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 5rem;
+  background-color: ${(props) => props.theme.palette.common.primary};
+  color: ${(props) => props.theme.palette.common.darkText};
+
+  @media ${device.laptop} {
+    font-size: 7rem;
+  }
+`;
+const AdvertContainer_img = styled.img`
+  display: none;
+  width: auto;
+
+  @media ${device.tablet} {
+    display: flex;
+    height: 60%;
+  }
+  @media ${device.laptopL} {
+    height: 80%;
   }
 `;

@@ -4,24 +4,35 @@ import { ReactNode } from 'react';
 type propsType = {
   id: string;
   bgcolor?: string;
+  wrapper: boolean;
   children?: ReactNode;
 };
 
-const Section = ({ id, bgcolor, children }: propsType): JSX.Element => {
+const Section = ({
+  id,
+  bgcolor,
+  wrapper,
+  children,
+}: propsType): JSX.Element => {
   return (
     <SectionContainer bgcolor={bgcolor} id={id}>
-      <Wrapper bgcolor={bgcolor}>{children}</Wrapper>
+      {wrapper === true ? (
+        <Wrapper bgcolor={bgcolor}>{children}</Wrapper>
+      ) : (
+        <>{children}</>
+      )}
     </SectionContainer>
   );
 };
 
 export default Section;
-// Pick<propsType, 'bgcolor'>
-const SectionContainer = styled.section<propsType>`
+
+const SectionContainer = styled.section<Pick<propsType, 'bgcolor'>>`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  padding: 6rem 0;
   background-color: ${(props) =>
     props.bgcolor ? props.bgcolor : props.theme.palette.primary.main};
 `;
