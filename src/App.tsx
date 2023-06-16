@@ -19,9 +19,10 @@ const App = () => {
       setThme('light');
     }
   };
+  console.log(import.meta.env.DEV);
   return (
     // basename={import.meta.env.DEV ? '/' : '/kuznia-chlodu/'}
-    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/kuznia-chlodu/'}>
+    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/kuznia-chlodu'}>
       <ThemeContext.Provider value={{ theme: theme, changeTheme: changeTheme }}>
         <ThemeProvider theme={theme === 'light' ? light : dark}>
           <GlobalStyle />
