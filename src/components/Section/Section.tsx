@@ -33,6 +33,7 @@ const SectionContainer = styled.section<Pick<propsType, 'bgcolor'>>`
   justify-content: center;
   width: 100%;
   padding: 6rem 0;
+  padding-bottom: 0;
   background-color: ${(props) =>
     props.bgcolor ? props.bgcolor : props.theme.palette.primary.main};
 `;
@@ -42,7 +43,6 @@ const SectionContainer = styled.section<Pick<propsType, 'bgcolor'>>`
 const Wrapper = styled.div<Pick<propsType, 'bgcolor'>>`
   display: flex;
   width: 90%;
-  margin: 2rem 0;
   max-width: 1600px;
   background-color: ${(props) =>
     props.bgcolor ? props.bgcolor : props.theme.palette.primary.main};
