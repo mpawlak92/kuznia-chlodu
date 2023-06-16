@@ -5,6 +5,7 @@ import { ThemeContext } from '../../stores/context';
 import { Link } from 'react-scroll';
 import sunImg from '../../assets/sun.svg';
 import moonImg from '../../assets/moon.png';
+import logo from '../../assets/logo.png';
 
 const Menu = () => {
   const changeTheme = useContext(ThemeContext);
@@ -26,7 +27,7 @@ const Menu = () => {
       <Logo isScrolled={isScrolledDown}>
         {location.pathname === '/' ? (
           <Link activeClass='active' to='#' smooth={true} className='link'>
-            <img src='/logo.png' alt='' />
+            <img src={logo} alt='' />
             Kuznia Chłodu
           </Link>
         ) : (
