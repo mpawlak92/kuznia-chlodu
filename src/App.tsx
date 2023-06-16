@@ -20,7 +20,7 @@ const App = () => {
     }
   };
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/kuznia-chlodu/'}>
       <ThemeContext.Provider value={{ theme: theme, changeTheme: changeTheme }}>
         <ThemeProvider theme={theme === 'light' ? light : dark}>
           <GlobalStyle />
