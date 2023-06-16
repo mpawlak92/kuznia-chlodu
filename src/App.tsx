@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import GlobalStyle from './style/GlobalStyle';
 import Routing from './Routing/Routing';
-// import Menu from './components/Menu/Menu';
+
 import { ThemeContext } from './stores/context';
 
 const App = () => {
@@ -20,7 +20,8 @@ const App = () => {
     }
   };
   return (
-    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/kuznia-chlodu/'}>
+    // basename={import.meta.env.DEV ? '/' : '/kuznia-chlodu/'}
+    <BrowserRouter>
       <ThemeContext.Provider value={{ theme: theme, changeTheme: changeTheme }}>
         <ThemeProvider theme={theme === 'light' ? light : dark}>
           <GlobalStyle />
