@@ -1,6 +1,6 @@
 # Project description  - kuznia-chlodu 
 
-<!-- Deploy projektu można obejrzec pod aderesem: [https://mpawlak92.github.io/muscodeapp/](https://mpawlak92.github.io/muscodeapp/) -->
+Deploy projektu można obejrzec pod aderesem: [https://mpawlak92.github.io/kuznia-chlodu/](https://mpawlak92.github.io/kuznia-chlodu/)
 
 It is SPA for air conditioning company. It presents all nedded informaton about services offered by kuznia-chlodu. It allow to contat with tem and check how they are work.
 
