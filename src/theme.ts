@@ -19,6 +19,7 @@ export const light: DefaultTheme = {
     secondary: {
       main: '#fff',
       mainSemiTransparent: 'rgba(255,255,255,0.8)',
+      blackHalfTransparent: 'rgba(0,0,0,0.5)',
       contrastText: '#5a6777',
     },
   },
