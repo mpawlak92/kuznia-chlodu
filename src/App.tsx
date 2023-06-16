@@ -19,7 +19,6 @@ const App = () => {
       setThme('light');
     }
   };
-  console.log(import.meta.env.DEV);
   return (
     // basename={import.meta.env.DEV ? '/' : '/kuznia-chlodu/'}
     <BrowserRouter basename={import.meta.env.DEV ? '/' : '/kuznia-chlodu'}>
